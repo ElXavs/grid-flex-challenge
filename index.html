@@ -20,7 +20,7 @@
                 </div>
             </div>
             <div class="item media">
-                <figure class="media-image">
+                <figure class="media-image" id="toggle"/>
                     <img src="https://img.icons8.com/ios/250/000000/youtube-play.png"/>
                 </figure>
             </div>
@@ -29,15 +29,26 @@
             </div>
             <div class="item footer">
                 <div class="buttons">
-                    <input type="button" value="ACTION 1">
+                    <input type="button" value="Toggle" onclick="toggle()">
                     <input type="button" value="ACTION 2">
                 </div>
                 <div class="icons">
-                    <img src="https://img.icons8.com/material-rounded/24/000000/like.png" class="like"/>
+                    <img src="https://img.icons8.com/material-rounded/24/000000/like.png" class="like">
                     <img src="https://img.icons8.com/android/24/000000/share.png" class="share"/>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        function toggle(){
+            var  toggle= document.getElementById("toggle");
+
+            if (toggle.style.display === "block"){
+                toggle.style.display = "none";
+            } else {
+                toggle.style.display = "block"
+            }
+        }
+    </script>
 </body>
 </html>
